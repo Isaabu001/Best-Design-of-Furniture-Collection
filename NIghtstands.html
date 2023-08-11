@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Site</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom utilities css -->
+    <link rel = "stylesheet" href = "utilities.css">
+    <!-- custom main css -->
+    <link rel = "stylesheet" href = "main.css">
+</head>
+<body>
+
+    <div class = "holder">
+        <!-- navbar -->
+        <nav class = "navbar bg-brown flex">
+            <div class = "container flex">
+                <div class = "toggler-and-category bg-brown text-white flex">
+                    <button type = "button" class = "btn navbar-show-btn text-white">
+                        <i class = "fas fa-bars"></i>
+                    </button>
+                    <div class = "category-list">
+                        <span>Category</span>
+                        <button type = "button" class = "btn category-toggler-btn text-white">
+                            <i class = "fas fa-circle-arrow-down"></i>
+                        </button>
+                    </div>
+
+                    <!-- side navbar -->
+                    <ul id = "side-navbar" class = "bg-white text-uppercase">
+                        <button type = "button" class = "btn navbar-hide-btn text-dark">
+                            <i class = "fas fa-times"></i>
+                        </button>
+                        <li><a href = "index.html">home</a></li>
+                        <li><a href = "FEATURED.html">featured</a></li>
+                        <li><a href = "NEWS.html">news</a></li>
+                        <li><a href = "SHOP.html">shop</a></li>
+                        <li><a href = "ABOUT.html">about</a></li>
+                        <li><a href = "CONTACT.html">contact</a></li>
+                    </ul>
+                    <!-- end of side navbar -->
+
+                    <ul id = "category-list-items" class = "bg-white">
+                        <li><a href = "smallfurniture.html">Small Furniture</a></li>
+                        <li><a href = "NIghtstands.html">NIghtstands</a></li>
+                        <li><a href = "Dressers.html">Dressers</a></li>
+                        <li><a href = "Bookcase.html">Bookcase</a></li>
+                        <li><a href = "CoffeeTables.html">Coffee Tables</a></li>
+                        <li><a href = "Mattresses.html">Mattresses</a></li>
+                        <li><a href = "Sofas.html">Sofas</a></li>
+                        <li><a href = "Chairs.html">Chairs</a></li>
+                        <li><a href = "HallTrees.html">Hall Trees</a></li>
+                        <li><a href = "FurnitureStores.html">Furniture Stores</a></li>
+                    </ul>
+                </div>
+
+                <!-- main navigation list -->
+                <div class = "navbar-collapse flex">
+                    <!-- nav list -->
+                    <ul class = "navbar-nav text-uppercase">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link active-link">
+                                <span class = "nav-link-text">home</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "FEATURED.html" class = "nav-link">
+                                <span class = "nav-link-text">featured</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "SHOP.html" class = "nav-link">
+                                <span class = "nav-link-text">shop</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "NEWS.html" class = "nav-link">
+                                <span class = "nav-link-text">news</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "ABOUT.html" class = "nav-link">
+                                <span class = "nav-link-text">about</span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "CONTACT.html" class = "nav-link">
+                                <span class = "nav-link-text">contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end of nav list -->
+
+                    <!-- account icons -->
+                    <div class = "account-info">
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-person"></i>
+                        </a>
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-shopping-basket"></i>
+                        </a>
+                    </div>
+                    <!-- end of account icons -->
+                </div>
+                <!-- end of main navigation list -->
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- header -->
+        <header class = "header bg-light-brown flex" id = "home">
+            <div class = "container">
+                <div class = "header-content grid text-center">
+                    <div class = "header-left">
+                        <h1>Best Design of Furniture Collection</h1>
+                        <p class = "text">Improve the atmosphere through interior design that is driven by purposes to bring value into your environment</p>
+                        <a href = "#" class = "btn-header text-white bg-brown">shop now</a>
+                    </div>
+
+                    <div class = "header-right">
+                        <img src = "https://scontent.xx.fbcdn.net/v/t1.15752-9/345153635_202321192618920_4716679229440885597_n.png?stp=dst-png_s206x206&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFgUQ66CVf6Z3PvnBYuYwxXmjgmqyyYugaaOCarLJi6BioOnthI3hY23eVNiuPUQdgkB2YJEpH0r1CJg53UrpHd&_nc_ohc=TgGY7hGJGasAX9yKToO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRgIVyqAdesdP-KKFocEcNuxbZbVBuht3f8_10i08vVWw&oe=64856F40">
+                    </div>
+                    <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/header-shape.png?raw=true" class = "header-shape">
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- main content -->
+        <main>
+            <!-- top new products section -->
+<section id = "new-products" class = "new-products py bg-light-grey-color-shade">
+    <div class = "container">
+        <div class = "section-title text-center">
+            <h2>NIghtstands</h2>
+            <p class = "lead">kentai.</p>
+            <div class = "line"></div>
+        </div>
+
+        <div class = "new-products-content grid">
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202309/0633/cayman-nightstand-2-c.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://cdn.luxatic.com/wp-content/uploads/2022/02/Best-Nightstands.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://secure.img1-cg.wfcdn.com/im/13089185/resize-h600-w600%5Ecompr-r85/1724/172420150/Jarques+Manufactured+Wood+Nightstand.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://cdn.shopify.com/s/files/1/0617/5195/1601/products/lifestyle_MD318-NS-L-CG_1_1920x.jpg?v=1682858118" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://www.ikea.com/us/en/images/products/idanaes-nightstand-white__0931775_pe791215_s5.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://hips.hearstapps.com/hmg-prod/images/best-nightstands-1645024257.jpeg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://pyxis.nymag.com/v1/imgs/c03/670/b8a6a55e6a0d5216f7fc7d4964b246d8c6-nightstand-lede-image.2x.rsocial.w600.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://assets.weimgs.com/weimgs/rk/images/wcm//products/202248/0035/wright-nightstand-19-o.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://images.thdstatic.com/productImages/1bc8dccf-1915-4856-8b24-150a736ae95c/svn/white-fufu-gaga-nightstands-kf200150-01-64_600.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://cdn.shopify.com/s/files/1/0507/9017/0795/products/45BODHIEBNT_K201202.jpg?v=1678904398" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://nypost.com/wp-content/uploads/sites/2/2022/07/best-nightstands-amazon.jpg?quality=75&strip=all" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://ak1.ostkcdn.com/images/products/is/images/direct/21d1fd6ad625bf8131c66bc90b8eaa3f87bb863f/Mid-Century-1-Drawer-Nightstand.jpg?impolicy=medium" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://www.mgbwhome.com/on/demandware.static/-/Sites-mgbw-master/default/dw88fe716f/images/hi-res/FULL_MOON_BEDSIDE_RDC_SP23_SETTING.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://mobileimages.lowes.com/productimages/5a36552d-40f3-4c17-8ca1-ca057a7aeb2d/10386492.jpg?size=pdhism" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://ak1.ostkcdn.com/images/products/15974255/Somerset-Nightstand-609b5845-5625-419d-9d89-02b3c94d96c0_1000.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://m.media-amazon.com/images/I/81Ot9ID4L5L.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://secure.img1-cg.wfcdn.com/im/19315852/compr-r85/2015/201571275/portman-manufactured-wood-nightstand.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://images.thdstatic.com/productImages/9d0cb8a6-9ea6-4796-8688-19368d59d3a8/svn/white-nightstands-kf210123-04-xin-64_1000.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://media1.popsugar-assets.com/files/thumbor/Mg0bHNdJ6dXRJdbYuspEez18BEo/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/08/10/900/n/1922794/6fa31b2e62f416e4cfc079.77443533_/i/best-nightstands.jpg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "new-product-item">
+                <div class = "image">
+                    <img src = "https://i5.walmartimages.com/asr/b3bcd65d-8f26-4c3f-a3a4-01708ef02659.fa208ef42e33e6f6e2608d2e8470e507.jpeg" alt = "">
+                    <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                </div>
+                <div class = "info">
+                    <div class = "ratings text-grey">
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-brown"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <i class = "fas fa-star text-light-grey"></i>
+                        <span>(10 Reviews)</span>
+                    </div>
+                    <p class = "name">Decor For Drawing Room</p>
+                    <div class = "price">
+                        <span class = "old text-grey">$ 50.00</span>
+                        <span class = "new text-brown">$ 35.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of top new products section -->
+
+           
+
+        
+
+         
+
+
+            <!-- feedback section -->
+            <section class = "feedback py bg-light-grey-color-shade" id = "feedback">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Feedback</h2>
+                        <p class = "lead">kentai.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "feedback-inner">
+                        <div class = "feedback-container grid">
+                            <div class = "feedback-item bg-white text-center" data-id = "1">
+                                <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/quote-icon-dark.png?raw=true" class = "quote-icon">
+                                <p class = "text text-grey">kentai</p>
+                                <div class = "client">
+                                    <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/client-1.jpg?raw=true">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "2" id = "feedback-display">
+                                <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/quote-icon.png?raw=true" class = "quote-icon">
+                                <p class = "text text-grey">kentai</p>
+                                <div class = "client">
+                                    <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/client-2.jpg?raw=true">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "3">
+                                <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/quote-icon-dark.png?raw=true" class = "quote-icon">
+                                <p class = "text text-grey">kentai</p>
+                                <div class = "client">
+                                    <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/client-3.jpg?raw=true">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "feedback-btns flex">
+                        <button class = "feedback-btn feedback-active-btn"></button>
+                        <button class = "feedback-btn"></button>
+                        <button class = "feedback-btn"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of feedback section -->
+
+            <!-- newsletter section -->
+            <section class = "newsletter py bg-light-grey-color-shade" id = "newsletter">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Newsletter</h2>
+                        <p class = "lead">kentai.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "newsletter-content">
+                        <form>
+                            <div class = "input-group flex">
+                                <input type = "email" class = "form-control bg-light-grey">
+                                <button type = "submit" class = "btn bg-dark text-white text-uppercase">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- end of newsletter section -->
+        </main>
+        <!-- end of main content -->
+
+        <!-- footer -->
+        <footer class = "footer bg-light-brown" id = "footer">
+            <div class = "container">
+                <div class = "footer-content py grid text-center">
+                    <div class = "footer-item">
+                        <h3>Furnish.com</h3>
+                        <p class = "text">kentai</p>
+                        <ul class = "social-links flex">
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Contact Us</h3>
+                        <p class = "text">N70, Surulere Street,Lagos , Nigeria</p>
+                        <p class = "text">Phone: +234 (8106) 898196</p>
+                        <p class = "text">Email: fakowajokehinde777@furnish.com</p>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Recent Post</h3>
+                        <ul>
+                            <li class = "text"><a href = "Roomsdecoration.html">Rooms decoration package</a></li>
+                            <li class = "text"><a href = "package.html">package</a></li>
+                            <li class = "text"><a href = "DinningMaterials.html">Dinning Materials</a></li>
+                            <li class = "text"><a href = "EventFurniture.html">Event Furniture</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Our Portfolio</h3>
+                        <ul>
+                            <li class = "text"><a href = "EFTADesign.html">EFTA Design</a></li>
+                            <li class = "text"><a href = "Decoration.html">County Hall Decoration</a></li>
+                            <li class = "text"><a href = "SOOConference.html">SOO Conference</a></li>
+                            <li class = "text"><a href = "LAEvents.html">LA Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer-end bg-dark">
+                <div class = "container grid">
+                    <p class = "text text-white text-center">&copy; Copyright 2021. All Right Reserved. Designed and Developed by kentai</p>
+                    <div class = "flex payment">
+                        <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/pay_1.png?raw=true">
+                        <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/pay_2.png?raw=true">
+                        <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/pay_3.png?raw=true">
+                        <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/pay_4.png?raw=true">
+                        <img src = "https://github.com/prabinmagar/furnish-website-template-html-css-js/blob/master/images/pay_5.png?raw=true">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    
+
+
+
+
+    <!-- custom js -->
+    <script src = "script.js"></script>
+</body>
+</html>
